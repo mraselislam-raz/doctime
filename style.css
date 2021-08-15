@@ -1,0 +1,551 @@
+/* global css */
+body{
+    font-family: 'Georama', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.button{
+    border-radius: 100px;
+}
+
+
+/* -----mainn css */
+
+.header-section{
+    background-image: url(./imgs/bg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 14vh;
+    background:#fff;
+    position: sticky;
+    top: 0;
+    z-index: 1111;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-item a{
+    font-weight: 600;
+}
+
+.navbar-brand img{
+    width: 250px;
+}
+
+.banner-section{
+    background-image: url(./imgs/bg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-text h1{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.banner-text p{
+    font-size: 20px;
+    margin-bottom: 90px;
+}
+
+.why-use-section{
+    background-image: url(./imgs/why_use_doctime.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.why-use-section h2{
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+.why-use-section li{
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    align-items: center;
+}
+
+.why-use-section li::marker{
+    color: rgb(0, 153, 255);
+}
+
+.why-use-section li::after{
+    content: "";
+    position: absolute;
+    top: 49%;
+    left: -3%;
+    height: 60%;
+    width: 2px;
+    background: rgb(30, 142, 216);
+}
+
+.get-help-section{
+    background-color: #fffafa;
+}
+
+.tips-card img{
+    width: 20%;
+}
+.tips-card h4{
+    color: rgb(0, 153, 255);
+}
+
+.tips-card p{
+    font-size: 14px;
+}
+
+.when-use-section P{
+    font-size: 14px;
+}
+
+.three-steps-section{
+    background: #f3f7fe;
+}
+
+.step-img img{
+    width: 50%;
+    margin-left: 60px;
+    border-radius: 20px;
+    box-shadow: -15px 15px 15px rgb(120, 122, 120);
+}
+
+.info-text h6{
+    font-weight: 560;
+    font-size: 18px;
+}
+
+.step-info .fas{
+    width: 220px;
+    height: 100px;
+    background: rgb(0, 153, 255);
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    margin-right: 40px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.main-service-section{
+    background: #f3fef8;
+}
+.list-item{
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.list-icon i{
+    font-size: 40px;
+    color: rgb(4, 77, 122);
+}
+
+.list-text h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(7, 83, 131);
+}
+
+.specialties-section ul{
+    list-style: none;
+}
+
+.specialties-section ul li::before{
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    display: inline-block;
+    padding-right: 10px;
+    color: rgb(59, 224, 26);
+}
+
+.join-us-section{
+    background-image: url(./imgs/bg_quilified.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.carousel-title img{
+    width: 50px;
+    height: 50px;
+}
+
+.benifits-carousel{
+    /* background-color: gray; */
+    height: 100%;
+    width: 90%;
+    margin:0 auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #333;
+    background-color: rgb(218, 238, 230);
+    color: rgb(0, 0, 0);
+
+}
+
+.carousel-info p{
+    font-size: 15px;
+}
+
+
+.carousel-indicators{
+    bottom: -35px;
+}
+.carousel-indicators li{
+    background-color:#111;
+}
+
+.rating-section{
+    background: linear-gradient(to left,#fff,#f0f0);
+}
+
+.rating-title span{
+    color: rgb(13, 240, 32);
+    font-weight: 700;
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rating-info{
+    margin-left: 8%;
+}
+
+.rating-rate h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(25, 0, 255);
+    margin-left: 9%;
+}
+
+.rating-main{
+    box-shadow: 2px 2px 3px rgb(240, 227, 227);
+    border-radius: 10px;
+}
+
+.rating-rate img{
+    width: 150px;
+}
+
+.rating-line{
+    width: 70%;
+    height: 13px;
+    border-radius: 100px;
+    background: rgb(236, 231, 245);
+    margin: 10px 0;
+    position: relative;
+}
+
+.rating-line::before{
+    content: attr(data-counter);
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    top: -5px;
+    left: -45px;
+    color: blue;
+}
+.rating-line i{
+    position: absolute;
+    bottom: 1px;
+    left: -32px;
+    font-size: 12px;
+    color: chocolate;
+}
+
+
+.rating-line:first-child:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    border-radius: 100px;
+    background: linear-gradient(to left, rgb(61, 172, 206),rgb(86, 62, 223));
+}
+
+.rating-line:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    border-radius: 100px;
+    background: linear-gradient(to left, rgb(61, 172, 206),rgb(86, 62, 223));
+}
+
+.rating-line:nth-child(3)::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17%;
+    height: 100%;
+    border-radius: 100px;
+    background: linear-gradient(to left, rgb(61, 172, 206),rgb(86, 62, 223));
+}
+
+.rating-line:nth-child(4)::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    border-radius: 100px;
+    background: linear-gradient(to left, rgb(61, 172, 206),rgb(86, 62, 223));
+}
+
+.rating-line:nth-child(5)::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 100%;
+    border-radius: 100px;
+    background: linear-gradient(to left, rgb(61, 172, 206),rgb(86, 62, 223));
+}
+.rating-right{
+    position: relative;
+}
+.rating-right::before{
+    content:"\f04b";
+    font-family:'Font Awesome 5 Free';
+    font-weight: 600;
+    position: absolute;
+    top: 43%;
+    left: 46%;
+    z-index: 1100;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background: rgb(255, 24, 24);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(216, 17, 17);
+}
+
+.download-app-section{
+    background-image: url(./imgs/bg_app.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffff;
+}
+
+.overlay-image{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.app-download-source img{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.app-app-store img{
+    height: auto;
+    width: 120px;
+}
+
+.qnas .fas{
+    font-size: 30px;
+    /* margin-left: 5%; */
+}
+
+.qna-list{
+    position: relative;
+}
+
+.qnas i{
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+.contact-us-section{
+    background-image: url(./imgs/bg_contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+
+.contact-form{
+    background-color: white;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 40px;
+}
+.contact-title p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.contact-info .input-1{
+    height: 65px;
+    box-sizing: border-box;
+    width: 45%;
+    outline: none;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.contact-info .input-2{
+    height: 65px;
+    width: 91%;
+    outline: none;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.contact-info .input-3{
+    height: 18vh;
+    width: 91%;
+    border: none;
+    outline: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+
+.contact-info input::placeholder{
+    padding-left: 20px;
+    color: rgb(26, 24, 24);
+}
+
+.contact-info textarea::placeholder{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.contact-info input:hover{
+    box-shadow: 5px 5px 10px rgb(82, 117, 101);
+}
+
+.contact-info input:focus{
+    box-shadow: 5px 5px 10px rgb(82, 117, 101);
+}
+
+.contact-info textarea:hover{
+    box-shadow: 5px 5px 10px rgb(82, 117, 101);
+}
+
+.contact-info textarea:focus{
+    box-shadow: 5px 5px 10px rgb(82, 117, 101);
+}
+
+.contact-info .btn{
+    padding: 8px 80px;
+}
+
+
+.contact-info .btn:hover{
+    background: rgb(148, 228, 241);
+    color: rgb(0, 0, 0);
+}
+
+.footer-section{
+    background: linear-gradient(to left,rgb(178, 178, 236),rgb(241, 251, 255));
+}
+
+.footer-left-icon img{
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.call-contact{
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact i{
+    color: rgb(17, 0, 255);
+}
+
+.footer-contact a{
+    text-decoration: none;
+    color: #111;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer-social-media i{
+    font-size: 25px;
+    margin: 5px;
+}
+
+.footer-social-media a:first-child{
+    color: blue;
+}
+
+.footer-social-media a:nth-child(2){
+    color: #1da1f2;
+}
+.footer-social-media a:nth-child(3){
+    color: red;
+}
+.footer-social-media a:nth-child(4){
+    color: #bc2a9c;
+}
+
+.footer-items li{
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+.footer-app h6{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-app img{
+    width: 150px;
+    cursor: pointer;
+}
+
+.footer-bottom p{
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.footer-bottom a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(255, 0, 0);
+    transition: .3s;
+}
+
+.footer-bottom a:hover{
+    color: #1da1f2;
+}

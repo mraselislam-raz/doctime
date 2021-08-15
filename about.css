@@ -1,0 +1,270 @@
+/* global css */
+body{
+    font-family: 'Georama', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.button{
+    border-radius: 100px;
+}
+
+
+/* -----mainn css */
+
+.header-section{
+    background-image: url(./imgs/bg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 14vh;
+    background:#fff;
+    position: sticky;
+    top: 0;
+    z-index: 1111;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-item a{
+    font-weight: 600;
+}
+
+.navbar-brand img{
+    width: 250px;
+}
+
+/* ---------------------- */
+
+.our-mission{
+    width: 100%;
+    height: 45vh;
+    background-image: url(./imgs/mission.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.vision-bg{
+    background-image: url(./imgs/vission.jpg);
+}
+
+.mission-text h3{
+    font-size: 40px;
+}
+
+.hidden-mission-text{
+    width: 100%;
+    height: 45vh;
+    border-radius: 15px;
+    background: linear-gradient(to right,rgb(41, 41, 209),rgb(12, 184, 12));
+    position: absolute;
+    top: 0;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .8s;
+}
+
+.our-mission:hover .hidden-mission-text{
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+
+
+
+
+/* -------------------- */
+.qnas .fas{
+    font-size: 30px;
+    /* margin-left: 5%; */
+}
+
+.qna-list{
+    position: relative;
+}
+
+.qnas i{
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+.contact-us-section{
+    background-image: url(./imgs/bg_contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+
+.contact-form{
+    background-color: white;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 40px;
+}
+.contact-title p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.contact-info .input-1{
+    height: 65px;
+    box-sizing: border-box;
+    width: 45%;
+    outline: none;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.contact-info .input-2{
+    height: 65px;
+    width: 91%;
+    outline: none;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.contact-info .input-3{
+    height: 18vh;
+    width: 91%;
+    border: none;
+    outline: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+
+.contact-info input::placeholder{
+    padding-left: 20px;
+    color: rgb(26, 24, 24);
+}
+
+.contact-info textarea::placeholder{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.contact-info input:hover{
+    box-shadow: 5px 5px 10px rgb(82, 117, 101);
+}
+
+.contact-info input:focus{
+    box-shadow: 5px 5px 10px rgb(82, 117, 101);
+}
+
+.contact-info textarea:hover{
+    box-shadow: 5px 5px 10px rgb(82, 117, 101);
+}
+
+.contact-info textarea:focus{
+    box-shadow: 5px 5px 10px rgb(82, 117, 101);
+}
+
+.contact-info .btn{
+    padding: 8px 80px;
+}
+
+
+.contact-info .btn:hover{
+    background: rgb(148, 228, 241);
+    color: rgb(0, 0, 0);
+}
+
+.footer-section{
+    background: linear-gradient(to left,rgb(178, 178, 236),rgb(241, 251, 255));
+}
+
+.footer-left-icon img{
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.call-contact{
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact i{
+    color: rgb(17, 0, 255);
+}
+
+.footer-contact a{
+    text-decoration: none;
+    color: #111;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer-social-media i{
+    font-size: 25px;
+    margin: 5px;
+}
+
+.footer-social-media a:first-child{
+    color: blue;
+}
+
+.footer-social-media a:nth-child(2){
+    color: #1da1f2;
+}
+.footer-social-media a:nth-child(3){
+    color: red;
+}
+.footer-social-media a:nth-child(4){
+    color: #bc2a9c;
+}
+
+.footer-items li{
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+.footer-app h6{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-app img{
+    width: 150px;
+    cursor: pointer;
+}
+
+.footer-bottom p{
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.footer-bottom a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(255, 0, 0);
+    transition: .3s;
+}
+
+.footer-bottom a:hover{
+    color: #1da1f2;
+}
